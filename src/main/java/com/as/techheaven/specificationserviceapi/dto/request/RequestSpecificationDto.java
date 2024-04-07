@@ -12,6 +12,5 @@ public class RequestSpecificationDto {
 
     private long categoryId;
     private String spec;
-    private boolean status;
 
 }
