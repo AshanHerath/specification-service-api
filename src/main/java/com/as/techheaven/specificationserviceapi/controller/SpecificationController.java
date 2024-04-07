@@ -32,12 +32,6 @@ public class SpecificationController {
         return specificationService.findSpecificationByCategoryId(categoryId);
     }
 
-    @GetMapping("/{ids}")
-    @ResponseStatus(HttpStatus.OK)
-    private boolean isListAvailable(@PathVariable List<String> ids){
-        return specificationService.isListAvailable(ids);
-    }
-
     @PostMapping("/saveList")
     @ResponseStatus(HttpStatus.CREATED)
     private void saveSpecifications(@RequestBody List<RequestSpecificationDto> dtos){
